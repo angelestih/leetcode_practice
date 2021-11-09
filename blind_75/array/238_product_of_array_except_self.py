@@ -13,7 +13,7 @@ class Solution:
             product = 1
         
         return answer
-
+    #O(n) runtime and O(1) space
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         product_incremental = 1
         product_decremental = 1
