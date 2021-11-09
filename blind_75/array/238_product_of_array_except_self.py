@@ -26,4 +26,5 @@ class Solution:
         for i in range(len(nums)-2,-1,-1):
             product_decremental = product_decremental*nums[i+1]
             answer[i] = answer[i]* product_decremental
+        
         return answer
