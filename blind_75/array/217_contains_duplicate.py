@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     #O(n^2) two nested for loops
     def containsDuplicate1(self, nums: List[int]) -> bool:

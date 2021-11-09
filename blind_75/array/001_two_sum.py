@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     #brute force O(n^2)
     def two_Sum(self, nums: List[int], target: int) -> List[int]:
