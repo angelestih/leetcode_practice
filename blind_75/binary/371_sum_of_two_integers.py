@@ -9,7 +9,7 @@ class Solution(object):
             a = binary_sum
             b = carry
         if a > 0x7fffffff:
-            #check if a is bigger than 32 bits, by comparing to max number of 32 bits
+            #check if a is bigger than 32 bits, by comparing to max number of 32 bits, which would mean it's a negative number
             return ~(a^mask_32)
 
         return a
