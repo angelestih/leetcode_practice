@@ -6,7 +6,8 @@ class Solution:
         else:
             max_string = text2
             min_string = text1
-
+        #O(len(min_string)) space complexity from memo array
+        #O(len(min)*len(max)) runtime from nested for loops
         memo = [0] * (len(min_string)+1)
 
         for i in range(1, len(max_string)+1):
