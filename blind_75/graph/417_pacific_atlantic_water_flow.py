@@ -40,7 +40,8 @@ class Solution:
             next_column = column + direction[1]
             if next_row < 0 or next_row >= rows_number or next_column < 0 or next_column >= columns_number or ocean[next_row][next_column] == True or heights[next_row][next_column] < heights[row][column]:
                 #skip wrong coordinates and case when next cell is smaller than current cell
-                #because we are looking from outward towards inward
+                #because we are looking from outward towards inward to the cell from which it can receive 
+                #the water. It can always receive water from the cels with taller height
                 continue
             #check next cell
             self.dfs(next_row, next_column, ocean, rows_number, columns_number, heights)
